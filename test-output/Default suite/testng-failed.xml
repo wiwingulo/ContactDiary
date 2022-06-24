@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nexsoft.contactdiary.ContactDiaryTest">
+      <class name="com.nexsoft.newcontact.runner.CucumberRunner">
         <methods>
-          <include name="addEvent"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.nexsoft.contactdiary.ContactDiaryTest -->
+      </class> <!-- com.nexsoft.newcontact.runner.CucumberRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
